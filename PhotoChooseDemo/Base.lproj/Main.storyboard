@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ak3-4A-7Ic">
+                                <rect key="frame" x="80" y="61" width="161" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="xfm-FP-JOm"/>
+                                </constraints>
+                                <state key="normal" title="ChoosePhotos"/>
+                                <connections>
+                                    <action selector="choosePhotos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NDz-u9-R13"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7yg-tT-nV4">
+                                <rect key="frame" x="40" y="118" width="240" height="287"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="287" id="GFo-oh-skK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ak3-4A-7Ic" secondAttribute="trailing" constant="59" id="P3F-l2-2It"/>
+                            <constraint firstItem="ak3-4A-7Ic" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="aWI-tE-QfJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7yg-tT-nV4" secondAttribute="trailing" constant="20" id="f5i-lj-Vee"/>
+                            <constraint firstItem="7yg-tT-nV4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="i71-Lz-ngk"/>
+                            <constraint firstItem="7yg-tT-nV4" firstAttribute="top" secondItem="ak3-4A-7Ic" secondAttribute="bottom" constant="19" id="iE5-fN-FIE"/>
+                            <constraint firstItem="ak3-4A-7Ic" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="mlz-ZA-4fI"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="7yg-tT-nV4" id="Idh-Ve-z4A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="339"/>
+        </scene>
+    </scenes>
+</document>
